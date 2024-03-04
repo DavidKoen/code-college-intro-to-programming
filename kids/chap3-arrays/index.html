@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3 - Arrays</title>
+</head>
+
+<body>
+
+    <h1>Chapter 3 - Arrays</h1>
+
+    <script>
+
+        // ACCESSING AND ADDING TO ARRAYS
+
+        // let dinosaurs = [
+        //     "T-Rex",
+        //     "Velociraptor",
+        //     "Stegosaurus",
+        //     "Triceratops",
+        //     "Brachiosaurus",
+        //     "Pteranodon",
+        //     "Apatosaurus",
+        //     "Diplodocus",
+        //     "Compsognathus"
+        // ];
+
+        // let emptyArray = [];
+
+        // let tRex = dinosaurs[0];
+
+        // alert(tRex);
+
+        // alert(dinosaurs[1] = "VRaptor"); // THIS RENAMED THE 2ND ELEMENT OF THE ARRAY.
+
+        // emptyArray[0] = 'First';
+        // emptyArray[1] = 'Second';
+        // emptyArray[2] = 'Third';
+        // emptyArray[3] = 'Fourth';
+
+        // console.log(emptyArray);
+
+        // MULTIPLE DATA-TYPE ARRAYS
+
+        // let dinosaursAndNumbers = [3, "dinosaurs", ["triceratops", "stegosaurus", 3627.5], 10];
+
+        // let findArray = dinosaursAndNumbers[2];
+
+        // let stego = dinosaursAndNumbers[2][1]; // FINDS AN ELEMENT IN AN ARRAY INSIDE OF AN ARRAY.
+
+        // console.log(findArray);
+
+        // console.log(stego); 
+
+        // let maniacs = ["Yakko", "Wakko", "Dot"];
+
+        // console.log(maniacs[maniacs.length - 1]); // TO FIND THE LAST ELEMENT OF AN ARRAY YOU USE THE LENGTH MINUS ONE (COUNTS THE LENGTH THEN WORKS WITH).
+
+        // EDITING ARRAYS
+
+        // let fillArray = [];
+
+        // fillArray.push('One'); // .PUSH ADDS ELEMENTS TO THE BACK OF AN ARRAY.
+        // fillArray.push(2);
+        // fillArray.push(['uno', 'dos', 'drey']);
+        // fillArray.unshift('Start'); // .UNSHIFT ADDS ELEMENTS TO THE FRONT OF AN ARRAY.
+        // fillArray.unshift('Better Start');
+
+        // fillArray.pop(); // THIS WILL GET RID OF THE LAST ELEMENT OF AN ARRAY.
+        // fillArray.shift(); //THIS WILL GET RID OF THE FIRST ELEMENT OF AN ARRAY.
+
+        // console.log(fillArray);
+
+        // let manUTD = ['Rashford', 'Fernandez', 'Shaw'];
+        // let Liverpool = ['Alisson', 'VVD', 'Mo'];
+        // let manCity = ['Ederson', 'de Bruyne', 'Haaland'];
+
+        // let fullTeam = manUTD.concat(Liverpool); // ADDS ARRAYS TOGETHER WITHOUT AFFECTING THE ORIGINAL ARRAYS.
+
+        // console.log(manUTD);
+        // console.log(Liverpool);
+        // console.log(fullTeam);
+
+        // let hugeTeam = manUTD.concat(Liverpool, manCity);
+
+        // console.log(manCity);
+        // console.log(hugeTeam);
+
+        // console.log("Mo is the " + hugeTeam.indexOf('Mo') + "th player in the team.");  // .INDEXOF CAN SEARCH FOR THE POSITION OF AN ELEMENT IN AN ARRAY.
+
+        // let repeat = ['Yo', 'Wow', 'Repeat', 'Boom', 'Repeat', 'Smash'];
+
+        // console.log(repeat.indexOf('Repeat')); // THIS WILL FIND THE FIRST "REPEAT" ELEMENT.
+
+        // let originalArray = ['Hello', 'Goodbye', 'Howzit'];
+
+        // let edittedArray = originalArray.join(' '); // MAKES THE ARRAY A STRING WITH OUT CHANGING THE ORIGINAL ARRAY.
+
+        // console.log(originalArray);
+        // console.log(edittedArray);
+
+        // MATHS AND ARRAYS.
+
+        // console.log(Math.random()); // THIS WILL GENERATE ANY RANDOM NUMBER.
+        // console.log(Math.random() * 10); // THIS WILL GENERATE ANY RANDOM NUMBER IN MULTIPLES OF 10.
+        // console.log(Math.floor(Math.random() * 10)); // MATH FLOOR WILL ROUND UP NUMBERS TO WHOLE NUMBERS.
+
+        // let array = ['One', 'Two', 'Three', 'Four', 'Five'];
+        // let chooseWord = Math.floor(Math.random() * 5);
+
+        // console.log(array[chooseWord]); // THIS ROLLS THROUGH THE DIFFERENT ELEMENTS IN THE TARGETED ARRAY.
+
+        let body = ['hair', 'nose', 'feet', 'teeth'];
+        let insult = ['smelly', 'slimey', 'yellow'];
+        let anotherInsult = ['gross', 'icky'];
+
+        let theBody = Math.floor(Math.random() * 4);
+        let theInsult = Math.floor(Math.random() * 3);
+        let another = Math.floor(Math.random() * 2);
+
+        let ouch = 'Your ' + body[theBody] + ' is very ' + insult[theInsult] + ' and ' + anotherInsult[another] + '.';
+        console.log(ouch);
+
+        let task4 = [3, 2, 1];
+
+        let print4 = task4.join(' is bigger than ');
+        console.log(print4);
+
+    </script>
+
+</body>
+</html>
